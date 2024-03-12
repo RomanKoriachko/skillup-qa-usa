@@ -304,6 +304,9 @@ body {
 					@include fonts.t2();
 					margin-bottom: 24px;
 				}
+				.who-is-bold {
+					font-weight: 700;
+				}
 			}
 			.who-is-img-wrapper {
 				width: 50%;
@@ -312,56 +315,6 @@ body {
 					max-width: 480px;
 				}
 			}
-			// .who-is-scales {
-			// 	width: 50%;
-			// 	.scale-item {
-			// 		.scale-row {
-			// 			justify-content: space-between;
-			// 			align-items: center;
-			// 			margin-bottom: 16px;
-			// 			.scale-text {
-			// 				> p:nth-child(1) {
-			// 					@include fonts.p2();
-			// 				}
-			// 				> p:nth-child(2) {
-			// 					@include fonts.t4();
-			// 				}
-			// 			}
-			// 			.scale-salary {
-			// 				@include fonts.p1();
-			// 			}
-			// 		}
-			// 		.scale-parent {
-			// 			position: relative;
-			// 			width: 100%;
-			// 			height: 24px;
-			// 			border-radius: 6px;
-			// 			background: linear-gradient(
-			// 				147.71deg,
-			// 				#f0f5e0 20.89%,
-			// 				#e0f5e3 80.64%
-			// 			);
-			// 			margin-bottom: 24px;
-			// 			overflow: hidden;
-			// 			.scale-children {
-			// 				position: absolute;
-			// 				height: 100%;
-			// 				background: #4ebd09;
-			// 				border-radius: 6px;
-			// 				transition: 1s all;
-			// 			}
-			// 			.scale-children-1 {
-			// 				width: 22%;
-			// 			}
-			// 			.scale-children-2 {
-			// 				width: 68%;
-			// 			}
-			// 			.scale-children-3 {
-			// 				width: 100%;
-			// 			}
-			// 		}
-			// 	}
-			// }
 			.who-is-tablet-content {
 				display: none;
 			}
@@ -420,13 +373,13 @@ body {
 					gap: 20px;
 					margin-bottom: 10px;
 					> p {
-						// @include fonts.h5();
+						@include fonts.t1();
 						text-align: left;
 						color: #4d4d4d;
 					}
 				}
 				> div:nth-child(2) {
-					// @include fonts.t6();
+					line-height: 145%;
 					text-align: left;
 					margin-left: 20px;
 				}
@@ -439,40 +392,48 @@ body {
 			display: none;
 		}
 	}
-	.program-section {
-		padding-top: 40px;
-		padding-bottom: 80px;
-		background-color: #efefef;
-		.program-section-header {
-			margin-top: 0;
-		}
-		.check-img {
-			background-image: url(images/check-2-img.svg);
-		}
-		.program-section-header {
-			text-align: center;
-		}
-		.program-section-row {
-			flex-direction: row-reverse;
-			align-items: center;
-			gap: 20px;
-			.program-section-img-wrapper {
-				width: 45%;
-			}
-			.program-section-img {
-				max-width: 480px;
-				width: 100%;
-			}
-		}
-		.program-section-text {
-			margin: 0 auto;
-			width: fit-content;
-			.program-section-item {
-				@include fonts.t2();
-				margin-bottom: 24px;
-			}
+	.sign-up-section {
+		padding: 48px 0px;
+		text-align: center;
+		background: #0d1a30;
+		.sign-up-btn {
+			@include mainButton();
 		}
 	}
+	// .program-section {
+	// 	padding-top: 40px;
+	// 	padding-bottom: 80px;
+	// 	background-color: #efefef;
+	// 	.program-section-header {
+	// 		margin-top: 0;
+	// 	}
+	// 	.check-img {
+	// 		background-image: url(images/check-2-img.svg);
+	// 	}
+	// 	.program-section-header {
+	// 		text-align: center;
+	// 	}
+	// 	.program-section-row {
+	// 		flex-direction: row-reverse;
+	// 		align-items: center;
+	// 		gap: 20px;
+	// 		.program-section-img-wrapper {
+	// 			width: 45%;
+	// 		}
+	// 		.program-section-img {
+	// 			max-width: 480px;
+	// 			width: 100%;
+	// 		}
+	// 	}
+	// 	.program-section-text {
+	// 		margin: 0 auto;
+	// 		width: fit-content;
+	// 		.program-section-item {
+	// 			@include fonts.t2();
+	// 			margin-bottom: 24px;
+	// 		}
+	// 	}
+	// }
 	// .companies-section {
 	// 	color: white;
 	// 	background: #0d1a30;
@@ -625,7 +586,7 @@ body {
 								margin-right: 20px;
 							}
 							> p {
-								// @include fonts.h5();
+								@include fonts.t1();
 							}
 						}
 						.schedule-section-item-btn {
@@ -645,14 +606,14 @@ body {
 					}
 				}
 				.schedule-section-subitem {
-					// @include fonts.t6();
+					line-height: 145%;
 					height: 45px;
 					margin-top: -45px;
 					margin-left: 44px;
 					margin-right: 40px;
 					opacity: 0;
 					visibility: hidden;
-					transition: 0.3s all;
+					transition: margin 0.3s;
 					z-index: -1;
 				}
 				.active {
@@ -695,7 +656,7 @@ body {
 			.tariff-text-center {
 				text-align: center;
 				.tariff-header {
-					// @include fonts.mobileH1();
+					@include fonts.p2();
 					color: #4ebd09;
 					margin-bottom: 10px;
 				}
@@ -722,7 +683,6 @@ body {
 				align-items: center;
 				margin-bottom: 10px;
 				> p {
-					// @include fonts.t6();
 					line-height: 140%;
 				}
 			}
@@ -808,14 +768,6 @@ body {
 	// 		.numbers-comparison-item:first-child {
 	// 			border: none;
 	// 		}
-	// 	}
-	// }
-	// .sign-up-section {
-	// 	padding: 48px 0px;
-	// 	text-align: center;
-	// 	background: #0d1a30;
-	// 	.sign-up-btn {
-	// 		@include mainButton();
 	// 	}
 	// }
 	// .benefits-section {
@@ -1004,7 +956,6 @@ body {
 			.suitable-wrapper {
 				justify-content: center;
 				.suitable-item {
-					// max-width: 300px;
 					width: auto;
 					height: auto;
 				}
@@ -1165,8 +1116,6 @@ body {
 				grid-template-columns: 1fr 1fr;
 				gap: 10px;
 				.suitable-item {
-					// width: 265px;
-					// height: 140px;
 					padding: 8px;
 					.suitable-item-header {
 						gap: 9px;
@@ -1175,11 +1124,12 @@ body {
 							height: 32px;
 						}
 						> p {
-							// @include fonts.mobileT3();
+							font-weight: 500;
 						}
 					}
 					> div:nth-child(2) {
-						// @include fonts.mobileT9();
+						font-size: 14px;
+						line-height: 145%;
 					}
 				}
 			}
@@ -1196,23 +1146,23 @@ body {
 				display: none;
 			}
 		}
-		.program-section {
-			padding-bottom: 30px;
-			.program-section-header {
-				text-align: left;
-			}
-			.program-section-row {
-				flex-direction: column-reverse;
-				.program-section-img-wrapper {
-					width: 100%;
-					text-align: center;
-				}
-			}
-			.program-section-text {
-				margin: 0;
-				width: 100%;
-			}
-		}
+		// .program-section {
+		// 	padding-bottom: 30px;
+		// 	.program-section-header {
+		// 		text-align: left;
+		// 	}
+		// 	.program-section-row {
+		// 		flex-direction: column-reverse;
+		// 		.program-section-img-wrapper {
+		// 			width: 100%;
+		// 			text-align: center;
+		// 		}
+		// 	}
+		// 	.program-section-text {
+		// 		margin: 0;
+		// 		width: 100%;
+		// 	}
+		// }
 		// .companies-section {
 		// 	.companies-section-header {
 		// 		text-align: center;
@@ -1316,18 +1266,18 @@ body {
 }
 
 // hide numbers-comparison
-@media (max-width: 750px) {
-	.main {
-		.numbers-section {
-			.numbers-row {
-				margin-bottom: 0px;
-			}
-			.numbers-comparison {
-				display: none;
-			}
-		}
-	}
-}
+// @media (max-width: 750px) {
+// 	.main {
+// 		.numbers-section {
+// 			.numbers-row {
+// 				margin-bottom: 0px;
+// 			}
+// 			.numbers-comparison {
+// 				display: none;
+// 			}
+// 		}
+// 	}
+// }
 
 // Mobile
 @media (max-width: 576px) {
@@ -1375,7 +1325,7 @@ body {
 						font-size: 21px;
 					}
 					.introduce-content-title {
-						font-size: 32px;
+						font-size: 24px;
 						margin-top: 16px;
 					}
 					.introduce-content-date {
@@ -1428,9 +1378,6 @@ body {
 						margin-bottom: 0;
 					}
 				}
-				// .who-is-scales {
-				// 	margin-bottom: -24px;
-				// }
 				.who-is-tablet-text {
 					margin: 0px;
 				}
@@ -1441,9 +1388,10 @@ body {
 		}
 		.suitable-section {
 			padding-top: 32px;
-			padding-bottom: 0px;
+			padding-bottom: 0;
+			margin-bottom: 32px;
 			.suitable-section-header {
-				// @include fonts.mobileH2();
+				@include fonts.p2();
 				text-align: left;
 				margin-bottom: 16px;
 			}
@@ -1454,9 +1402,9 @@ body {
 				display: block;
 				margin-bottom: 0;
 				.suitable-item {
-					max-width: 350px;
-					height: 120px;
-					padding: 8px;
+					min-height: 140px;
+					padding: 10px;
+					padding-bottom: 16px;
 					background-color: #ffffff;
 					box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01),
 						0px 46px 28px rgba(15, 13, 28, 0.05),
@@ -1465,7 +1413,7 @@ body {
 						0px 0px 0px rgba(15, 13, 28, 0.1);
 					border-radius: 12px;
 					margin-right: 8px;
-					margin-bottom: 80px;
+					margin-bottom: 120px;
 					.suitable-item-header {
 						gap: 9px;
 						align-items: center;
@@ -1474,12 +1422,15 @@ body {
 							height: 32px;
 						}
 						> p {
-							// @include fonts.mobileT3();
+							font-weight: 600;
+							line-height: 19px;
 							color: #4d4d4d;
 						}
 					}
 					> div:nth-child(2) {
-						// @include fonts.mobileT9();
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 145%;
 						text-align: left;
 						margin-left: 16px;
 						margin-top: 8px;
@@ -1513,6 +1464,12 @@ body {
 				}
 			}
 		}
+		.sign-up-section {
+			button {
+				width: 100%;
+				@include fonts.b2();
+			}
+		}
 		// .companies-section {
 		// 	padding-top: 48px;
 		// 	padding-bottom: 48px;
@@ -1533,14 +1490,14 @@ body {
 		.schedule-section {
 			padding: 48px 0px;
 			.schedule-header {
-				// @include fonts.mobileH2();
+				@include fonts.p2();
 				text-align: left;
 				margin-bottom: 14px;
 			}
 			.schedule-section-content {
 				> p:nth-child(1) {
 					text-align: left;
-					// @include fonts.mobileH3();
+					@include fonts.t1();
 				}
 				.schedule-section-menu {
 					.schedule-section-item-wrapper {
@@ -1552,13 +1509,14 @@ body {
 									margin-right: 16px;
 								}
 								> p {
-									// @include fonts.mobileT2();
+									@include fonts.b2();
 								}
 							}
 						}
 					}
 					.schedule-section-subitem {
-						// @include fonts.mobileT9();
+						font-size: 14px;
+						line-height: 145%;
 						margin-left: 33px;
 						height: 45px;
 					}
@@ -1572,17 +1530,17 @@ body {
 			padding: 32px 0px;
 			.tariffs-header {
 				margin-bottom: 16px;
-				// @include fonts.mobileH2();
+				@include fonts.p2();
 			}
 			.tariff-item {
 				padding: 16px;
 				.tariff-text-center {
 					.tariff-header {
-						// @include fonts.mobileH2();
+						@include fonts.p2();
 						margin-bottom: 8px;
 					}
 					.tariff-description {
-						// @include fonts.mobileT5();
+						line-height: 19px;
 					}
 				}
 				.vertical-line {
@@ -1592,22 +1550,24 @@ body {
 				.tariff-text-item {
 					gap: 8px;
 					> p {
-						// @include fonts.mobileT8();
+						font-weight: 400;
+						font-size: 14px;
+						line-height: 17px;
 					}
 				}
 				.price-and-discont {
 					justify-content: space-between;
 				}
 				.line-through {
-					// @include fonts.mobileH3();
+					@include fonts.t1();
 					font-weight: 500;
 					.tariff-price {
-						// @include fonts.mobileH3();
+						@include fonts.t1();
 						font-weight: 500;
 					}
 				}
 				.tariff-discont {
-					// @include fonts.mobileH3();
+					@include fonts.t1();
 					font-weight: 400;
 				}
 			}
@@ -1621,12 +1581,6 @@ body {
 		// .numbers-section {
 		// 	.numbers-header {
 		// 		font-size: 26px;
-		// 	}
-		// }
-		// .sign-up-section {
-		// 	button {
-		// 		width: 100%;
-		// 		@include fonts.b2();
 		// 	}
 		// }
 		// .benefits-section {

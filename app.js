@@ -30,7 +30,7 @@ let programBtn = document.querySelectorAll('.header-menu-item-2');
 let coachBtn = document.querySelectorAll('.header-menu-item-3');
 
 let aboutRecruterSection = document.querySelector('.who-is-section');
-let programSection = document.querySelector('.program-section');
+let programSection = document.querySelector('.schedule-section');
 let coachSection = document.querySelector('.coach-section');
 
 for (let i = 0; i < aboutRecruterBtn.length; i++) {
@@ -93,6 +93,26 @@ for (let i = 0; i < dropdownMenu.length; i++) {
 }
 
 // Sliders
+
+$(document).ready(function () {
+	$('.suitable-slider').slick({
+		dots: true,
+		centerMode: true,
+		arrows: false,
+		infinite: false,
+		variableWidth: false,
+		adaptiveHeight: true,
+	});
+});
+
+// $(document).ready(function () {
+// 	$('.suitable-slider-mobile').slick({
+// 		dots: true,
+// 		arrows: false,
+// 		infinite: false,
+// 		variableWidth: true,
+// 	});
+// });
 
 $(document).ready(function () {
 	$('.slider-text').slick({

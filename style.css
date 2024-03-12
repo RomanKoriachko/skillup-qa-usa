@@ -368,6 +368,9 @@ body {
   line-height: 24px;
   margin-bottom: 24px;
 }
+.main .who-is-section .who-is-wrapper .who-is-text .who-is-bold {
+  font-weight: 700;
+}
 .main .who-is-section .who-is-wrapper .who-is-img-wrapper {
   width: 50%;
 }
@@ -509,10 +512,15 @@ body {
   margin-bottom: 10px;
 }
 .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > p {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
   text-align: left;
   color: #4d4d4d;
 }
 .main .suitable-section .suitable-wrapper .suitable-item > div:nth-child(2) {
+  line-height: 145%;
   text-align: left;
   margin-left: 20px;
 }
@@ -522,43 +530,49 @@ body {
 .main .suitable-section .suitable-slider-mobile {
   display: none;
 }
-.main .program-section {
-  padding-top: 40px;
-  padding-bottom: 80px;
-  background-color: #efefef;
-}
-.main .program-section .program-section-header {
-  margin-top: 0;
-}
-.main .program-section .check-img {
-  background-image: url(images/check-2-img.svg);
-}
-.main .program-section .program-section-header {
+.main .sign-up-section {
+  padding: 48px 0px;
   text-align: center;
+  background: #0d1a30;
 }
-.main .program-section .program-section-row {
-  flex-direction: row-reverse;
-  align-items: center;
-  gap: 20px;
-}
-.main .program-section .program-section-row .program-section-img-wrapper {
-  width: 45%;
-}
-.main .program-section .program-section-row .program-section-img {
-  max-width: 480px;
-  width: 100%;
-}
-.main .program-section .program-section-text {
-  margin: 0 auto;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-.main .program-section .program-section-text .program-section-item {
+.main .sign-up-section .sign-up-btn {
+  width: 430px;
+  min-height: 50px;
   font-family: "Exo 2";
-  font-weight: 500;
+  font-weight: 700;
   font-size: 18px;
-  line-height: 24px;
-  margin-bottom: 24px;
+  line-height: 26px;
+  background: #4ebd09;
+  border: none;
+  padding: 14px 15px;
+  border-radius: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  color: #fff;
+  position: relative;
+  transition: all 0.3s, ease;
+}
+@media (max-width: 750px) {
+  .main .sign-up-section .sign-up-btn {
+    width: 100%;
+  }
+}
+@media (hover: hover) {
+  .main .sign-up-section .sign-up-btn::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 10px;
+    transition: all 1s ease;
+  }
+  .main .sign-up-section .sign-up-btn:hover::before {
+    box-shadow: 0 0 15px 5px #4ebd09;
+  }
 }
 .main .schedule-section {
   padding: 100px 0px;
@@ -606,6 +620,12 @@ body {
 .main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-item-wrapper .schedule-section-item > div:nth-child(1) > img {
   margin-right: 20px;
 }
+.main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-item-wrapper .schedule-section-item > div:nth-child(1) > p {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+}
 .main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-item-wrapper .schedule-section-item .schedule-section-item-btn {
   height: 24px;
   width: 24px;
@@ -621,13 +641,14 @@ body {
   background-image: url(images/benefits-section-arrow-up-img.svg);
 }
 .main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-subitem {
+  line-height: 145%;
   height: 45px;
   margin-top: -45px;
   margin-left: 44px;
   margin-right: 40px;
   opacity: 0;
   visibility: hidden;
-  transition: 0.3s all;
+  transition: margin 0.3s;
   z-index: -1;
 }
 .main .schedule-section .schedule-section-content .schedule-section-menu .active {
@@ -670,6 +691,10 @@ body {
   text-align: center;
 }
 .main .tariffs-section .tariff-item .tariff-text-center .tariff-header {
+  font-family: "Exo 2";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
   color: #4ebd09;
   margin-bottom: 10px;
 }
@@ -1093,6 +1118,13 @@ body {
     width: 32px;
     height: 32px;
   }
+  .main .suitable-section .suitable-wrapper .suitable-item .suitable-item-header > p {
+    font-weight: 500;
+  }
+  .main .suitable-section .suitable-wrapper .suitable-item > div:nth-child(2) {
+    font-size: 14px;
+    line-height: 145%;
+  }
   .main .suitable-section .suitable-section-content .suitable-btn {
     margin-top: 30px;
     width: 430px;
@@ -1140,23 +1172,6 @@ body {
   }
   .main .suitable-section .suitable-slider-mobile {
     display: none;
-  }
-  .main .program-section {
-    padding-bottom: 30px;
-  }
-  .main .program-section .program-section-header {
-    text-align: left;
-  }
-  .main .program-section .program-section-row {
-    flex-direction: column-reverse;
-  }
-  .main .program-section .program-section-row .program-section-img-wrapper {
-    width: 100%;
-    text-align: center;
-  }
-  .main .program-section .program-section-text {
-    margin: 0;
-    width: 100%;
   }
   .main .schedule-section {
     padding: 50px;
@@ -1207,14 +1222,6 @@ body {
     gap: 32px;
   }
 }
-@media (max-width: 750px) {
-  .main .numbers-section .numbers-row {
-    margin-bottom: 0px;
-  }
-  .main .numbers-section .numbers-comparison {
-    display: none;
-  }
-}
 @media (max-width: 576px) {
   .header .header-row .logo {
     height: 40px;
@@ -1253,7 +1260,7 @@ body {
     font-size: 21px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-title {
-    font-size: 32px;
+    font-size: 24px;
     margin-top: 16px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-date {
@@ -1292,9 +1299,14 @@ body {
   }
   .main .suitable-section {
     padding-top: 32px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
+    margin-bottom: 32px;
   }
   .main .suitable-section .suitable-section-header {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
     text-align: left;
     margin-bottom: 16px;
   }
@@ -1306,14 +1318,14 @@ body {
     margin-bottom: 0;
   }
   .main .suitable-section .suitable-slider .suitable-item {
-    max-width: 350px;
-    height: 120px;
-    padding: 8px;
+    min-height: 140px;
+    padding: 10px;
+    padding-bottom: 16px;
     background-color: #ffffff;
     box-shadow: 0px 82px 33px rgba(15, 13, 28, 0.01), 0px 46px 28px rgba(15, 13, 28, 0.05), 0px 21px 21px rgba(15, 13, 28, 0.09), 0px 5px 11px rgba(15, 13, 28, 0.1), 0px 0px 0px rgba(15, 13, 28, 0.1);
     border-radius: 12px;
     margin-right: 8px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
   }
   .main .suitable-section .suitable-slider .suitable-item .suitable-item-header {
     gap: 9px;
@@ -1324,9 +1336,14 @@ body {
     height: 32px;
   }
   .main .suitable-section .suitable-slider .suitable-item .suitable-item-header > p {
+    font-weight: 600;
+    line-height: 19px;
     color: #4d4d4d;
   }
   .main .suitable-section .suitable-slider .suitable-item > div:nth-child(2) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 145%;
     text-align: left;
     margin-left: 16px;
     margin-top: 8px;
@@ -1357,22 +1374,45 @@ body {
     transform: translateX(-50%);
     width: 94%;
   }
+  .main .sign-up-section button {
+    width: 100%;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
   .main .schedule-section {
     padding: 48px 0px;
   }
   .main .schedule-section .schedule-header {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
     text-align: left;
     margin-bottom: 14px;
   }
   .main .schedule-section .schedule-section-content > p:nth-child(1) {
     text-align: left;
+    font-family: "Exo 2";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
   }
   .main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-item-wrapper .schedule-section-item > div:nth-child(1) > img {
     width: 16px;
     height: 16px;
     margin-right: 16px;
   }
+  .main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-item-wrapper .schedule-section-item > div:nth-child(1) > p {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+  }
   .main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-subitem {
+    font-size: 14px;
+    line-height: 145%;
     margin-left: 33px;
     height: 45px;
   }
@@ -1384,12 +1424,23 @@ body {
   }
   .main .tariffs-section .tariffs-header {
     margin-bottom: 16px;
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
   }
   .main .tariffs-section .tariff-item {
     padding: 16px;
   }
   .main .tariffs-section .tariff-item .tariff-text-center .tariff-header {
+    font-family: "Exo 2";
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: 8px;
+  }
+  .main .tariffs-section .tariff-item .tariff-text-center .tariff-description {
+    line-height: 19px;
   }
   .main .tariffs-section .tariff-item .vertical-line {
     margin-top: 16px;
@@ -1398,16 +1449,33 @@ body {
   .main .tariffs-section .tariff-item .tariff-text-item {
     gap: 8px;
   }
+  .main .tariffs-section .tariff-item .tariff-text-item > p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
   .main .tariffs-section .tariff-item .price-and-discont {
     justify-content: space-between;
   }
   .main .tariffs-section .tariff-item .line-through {
+    font-family: "Exo 2";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 500;
   }
   .main .tariffs-section .tariff-item .line-through .tariff-price {
+    font-family: "Exo 2";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 500;
   }
   .main .tariffs-section .tariff-item .tariff-discont {
+    font-family: "Exo 2";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
     font-weight: 400;
   }
   .main .tariffs-section .button-wrapper {
