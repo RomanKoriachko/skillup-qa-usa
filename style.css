@@ -681,11 +681,13 @@ body {
   gap: 20px;
 }
 .main .tariffs-section .tariff-item {
+  flex-direction: column;
+  justify-content: space-between;
   background: white;
   box-shadow: 0px 67px 27px rgba(63, 105, 72, 0.01), 0px 38px 23px rgba(63, 105, 72, 0.05), 0px 17px 17px rgba(63, 105, 72, 0.09), 0px 4px 9px rgba(63, 105, 72, 0.1), 0px 0px 0px rgba(63, 105, 72, 0.1);
   border-radius: 12px;
-  padding: 30px 52px;
-  width: 592px;
+  padding: 30px 30px;
+  width: 33%;
 }
 .main .tariffs-section .tariff-item .tariff-text-center {
   text-align: center;
@@ -697,6 +699,7 @@ body {
   line-height: 32px;
   color: #4ebd09;
   margin-bottom: 10px;
+  text-transform: uppercase;
 }
 .main .tariffs-section .tariff-item .tariff-text-center .tariff-description {
   font-family: "Exo 2";
@@ -711,16 +714,24 @@ body {
   margin-bottom: 20px;
   background-color: #d9d9d9;
 }
+.main .tariffs-section .tariff-item .tariff-item-subtitle {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
 .main .tariffs-section .tariff-item .tariff-plus-img {
   background-image: url(images/tariffs-plus-img.svg);
   background-position: center;
   background-repeat: no-repeat;
   height: 10px;
   min-width: 10px;
+  margin-top: 7px;
 }
 .main .tariffs-section .tariff-item .tariff-text-item {
   gap: 10px;
-  align-items: center;
+  align-items: start;
   margin-bottom: 10px;
 }
 .main .tariffs-section .tariff-item .tariff-text-item > p {
@@ -1191,9 +1202,11 @@ body {
   }
   .main .tariffs-section .tariffs-wrapper {
     flex-direction: column;
+    align-items: center;
   }
   .main .tariffs-section .tariffs-wrapper .tariff-item {
     width: 100%;
+    max-width: 500px;
   }
   .main .form-section .form-section-wrapper {
     flex-direction: column;
@@ -1374,7 +1387,7 @@ body {
     transform: translateX(-50%);
     width: 94%;
   }
-  .main .sign-up-section button {
+  .main .sign-up-section f button {
     width: 100%;
     font-family: "Exo 2";
     font-weight: 600;
