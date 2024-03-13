@@ -27,11 +27,11 @@ if (window.screen.height > 1100) {
 
 let aboutRecruterBtn = document.querySelectorAll('.header-menu-item-1');
 let programBtn = document.querySelectorAll('.header-menu-item-2');
-let coachBtn = document.querySelectorAll('.header-menu-item-3');
+let priceBtn = document.querySelectorAll('.header-menu-item-3');
 
-let aboutRecruterSection = document.querySelector('.who-is-section');
+let aboutRecruterSection = document.querySelector('.suitable-section');
 let programSection = document.querySelector('.schedule-section');
-let coachSection = document.querySelector('.coach-section');
+let priceSection = document.querySelector('.tariffs-section');
 
 for (let i = 0; i < aboutRecruterBtn.length; i++) {
 	aboutRecruterBtn[i].addEventListener('click', () => {
@@ -52,14 +52,14 @@ for (let i = 0; i < programBtn.length; i++) {
 	});
 }
 
-// for (let i = 0; i < coachBtn.length; i++) {
-// 	coachBtn[i].addEventListener('click', () => {
-// 		window.scrollTo({
-// 			top: coachSection.getBoundingClientRect().top + window.scrollY - 100,
-// 			behavior: 'smooth',
-// 		});
-// 	});
-// }
+for (let i = 0; i < priceBtn.length; i++) {
+	priceBtn[i].addEventListener('click', () => {
+		window.scrollTo({
+			top: priceSection.getBoundingClientRect().top + window.scrollY - 100,
+			behavior: 'smooth',
+		});
+	});
+}
 
 // Burger menu
 

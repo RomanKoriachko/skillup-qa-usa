@@ -310,16 +310,19 @@ body {
 			}
 			.who-is-img-wrapper {
 				width: 50%;
-				// text-align: center;
+				text-align: center;
 				> img {
 					width: 100%;
 					max-width: 480px;
 				}
 				.image-description {
-					text-align: left;
-					@include fonts.t1();
+					.bold {
+						@include fonts.t1();
+					}
+					text-align: right;
+					@include fonts.t2();
 					margin-top: 20px;
-					margin-left: 40px;
+					margin-right: 80px;
 				}
 			}
 		}
@@ -1108,6 +1111,8 @@ body {
 					.image-description {
 						width: fit-content;
 						margin: 0 auto;
+						margin-top: 20px;
+						text-align: left;
 					}
 				}
 				.who-is-desktop-content {
@@ -1397,6 +1402,7 @@ body {
 					.image-description {
 						width: 100%;
 						margin: 0;
+						margin-top: 20px;
 					}
 				}
 			}

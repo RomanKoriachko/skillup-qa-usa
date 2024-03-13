@@ -373,19 +373,26 @@ body {
 }
 .main .who-is-section .who-is-wrapper .who-is-img-wrapper {
   width: 50%;
+  text-align: center;
 }
 .main .who-is-section .who-is-wrapper .who-is-img-wrapper > img {
   width: 100%;
   max-width: 480px;
 }
 .main .who-is-section .who-is-wrapper .who-is-img-wrapper .image-description {
-  text-align: left;
+  text-align: right;
+  font-family: "Exo 2";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 20px;
+  margin-right: 80px;
+}
+.main .who-is-section .who-is-wrapper .who-is-img-wrapper .image-description .bold {
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  margin-top: 20px;
-  margin-left: 40px;
 }
 .main .who-is-section .who-is-btn-wrapper {
   text-align: center;
@@ -1104,6 +1111,8 @@ body {
     width: -moz-fit-content;
     width: fit-content;
     margin: 0 auto;
+    margin-top: 20px;
+    text-align: left;
   }
   .main .who-is-section .who-is-wrapper .who-is-desktop-content {
     display: none;
@@ -1312,6 +1321,7 @@ body {
   .main .who-is-section .who-is-wrapper .who-is-img-wrapper .image-description {
     width: 100%;
     margin: 0;
+    margin-top: 20px;
   }
   .main .who-is-section .who-is-btn {
     width: 100%;
