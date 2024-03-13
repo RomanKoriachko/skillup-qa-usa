@@ -280,7 +280,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   height: 30px;
-  width: 30px;
+  min-width: 30px;
 }
 .main .introduce-section .introduce-wrapper .upper-case {
   text-transform: uppercase;
@@ -378,20 +378,14 @@ body {
   width: 100%;
   max-width: 480px;
 }
-.main .who-is-section .who-is-wrapper .who-is-tablet-content {
-  display: none;
-}
-.main .who-is-section .who-is-tablet-text {
+.main .who-is-section .who-is-wrapper .who-is-img-wrapper .image-description {
+  text-align: left;
   font-family: "Exo 2";
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 400;
-  margin-bottom: 0px;
-  margin-top: 30px;
-  border-radius: 8px;
-  padding: 20px 10px;
-  background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
+  margin-top: 20px;
+  margin-left: 40px;
 }
 .main .who-is-section .who-is-btn-wrapper {
   text-align: center;
@@ -612,6 +606,9 @@ body {
 .main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-item-wrapper {
   padding: 24px 0px;
   background-color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   cursor: pointer;
 }
 .main .schedule-section .schedule-section-content .schedule-section-menu .schedule-section-item-wrapper .schedule-section-item {
@@ -822,6 +819,9 @@ body {
 }
 .main .form-section .form-section-wrapper .form-section-text {
   width: 50%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .main .form-section .form-section-wrapper .form-section-text > p:nth-child(1) {
   font-family: "Exo 2";
@@ -830,14 +830,7 @@ body {
   line-height: 48px;
   margin-bottom: 32px;
 }
-.main .form-section .form-section-wrapper .form-section-text > p:nth-child(2) {
-  font-family: "Exo 2";
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 32px;
-}
-.main .form-section .form-section-wrapper .form-section-text > p:nth-child(3) {
+.main .form-section .form-section-wrapper .form-section-text .green-text {
   font-family: "Exo 2";
   font-weight: 600;
   font-size: 24px;
@@ -1107,6 +1100,11 @@ body {
   .main .who-is-section .who-is-wrapper .who-is-img-wrapper > img {
     max-width: 500px;
   }
+  .main .who-is-section .who-is-wrapper .who-is-img-wrapper .image-description {
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0 auto;
+  }
   .main .who-is-section .who-is-wrapper .who-is-desktop-content {
     display: none;
   }
@@ -1309,10 +1307,11 @@ body {
     margin-bottom: 32px;
   }
   .main .who-is-section .who-is-wrapper .who-is-text > p:nth-child(2) {
-    margin-bottom: 0;
+    margin-bottom: 16;
   }
-  .main .who-is-section .who-is-wrapper .who-is-tablet-text {
-    margin: 0px;
+  .main .who-is-section .who-is-wrapper .who-is-img-wrapper .image-description {
+    width: 100%;
+    margin: 0;
   }
   .main .who-is-section .who-is-btn {
     width: 100%;

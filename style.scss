@@ -217,7 +217,7 @@ body {
 				background-position: center;
 				background-repeat: no-repeat;
 				height: 30px;
-				width: 30px;
+				min-width: 30px;
 			}
 			.upper-case {
 				text-transform: uppercase;
@@ -310,24 +310,18 @@ body {
 			}
 			.who-is-img-wrapper {
 				width: 50%;
+				// text-align: center;
 				> img {
 					width: 100%;
 					max-width: 480px;
 				}
+				.image-description {
+					text-align: left;
+					@include fonts.t1();
+					margin-top: 20px;
+					margin-left: 40px;
+				}
 			}
-			.who-is-tablet-content {
-				display: none;
-			}
-		}
-		.who-is-tablet-text {
-			@include fonts.t1();
-			font-weight: 400;
-			margin-bottom: 0px;
-			margin-top: 30px;
-			// border: 1px solid black;
-			border-radius: 8px;
-			padding: 20px 10px;
-			background: linear-gradient(147.71deg, #f0f5e0 20.89%, #e0f5e3 80.64%);
 		}
 		.who-is-btn-wrapper {
 			text-align: center;
@@ -580,6 +574,7 @@ body {
 				.schedule-section-item-wrapper {
 					padding: 24px 0px;
 					background-color: #ffffff;
+					user-select: none;
 					cursor: pointer;
 					.schedule-section-item {
 						align-items: center;
@@ -858,15 +853,14 @@ body {
 			gap: 32px;
 			.form-section-text {
 				width: 50%;
+				height: 100%;
+				flex-direction: column;
+				justify-content: space-between;
 				> p:nth-child(1) {
 					@include fonts.h2();
 					margin-bottom: 32px;
 				}
-				> p:nth-child(2) {
-					@include fonts.p2();
-					margin-bottom: 32px;
-				}
-				> p:nth-child(3) {
+				.green-text {
 					@include fonts.p2();
 					color: #4ebd09;
 				}
@@ -1110,6 +1104,10 @@ body {
 					text-align: center;
 					> img {
 						max-width: 500px;
+					}
+					.image-description {
+						width: fit-content;
+						margin: 0 auto;
 					}
 				}
 				.who-is-desktop-content {
@@ -1392,11 +1390,14 @@ body {
 						margin-bottom: 32px;
 					}
 					> p:nth-child(2) {
-						margin-bottom: 0;
+						margin-bottom: 16;
 					}
 				}
-				.who-is-tablet-text {
-					margin: 0px;
+				.who-is-img-wrapper {
+					.image-description {
+						width: 100%;
+						margin: 0;
+					}
 				}
 			}
 			.who-is-btn {
