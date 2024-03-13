@@ -257,9 +257,9 @@ body {
   font-weight: 700;
   font-size: 56px;
   line-height: 124%;
-  font-size: 72px;
+  font-size: 68px;
   margin-top: 36px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   width: 75%;
 }
@@ -271,6 +271,7 @@ body {
   font-weight: 600;
   font-size: 24px;
   line-height: 32px;
+  margin-bottom: 80px;
 }
 .main .introduce-section .introduce-wrapper .introduce-content-subtitle > span {
   color: #4ebd09;
@@ -393,6 +394,9 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+}
+.main .who-is-section .who-is-wrapper .who-is-img-wrapper .image-description span {
+  text-wrap: nowrap;
 }
 .main .who-is-section .who-is-btn-wrapper {
   text-align: center;
@@ -747,7 +751,10 @@ body {
   line-height: 140%;
 }
 .main .tariffs-section .tariff-item .price-and-discont {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
 }
 .main .tariffs-section .tariff-item .line-through {
   font-family: "Exo 2";
@@ -756,7 +763,6 @@ body {
   line-height: 24px;
   text-decoration: line-through;
   color: #fa2702;
-  margin-right: 20px;
 }
 .main .tariffs-section .tariff-item .line-through .tariff-price {
   color: #989898;
@@ -770,7 +776,16 @@ body {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
+  color: #fa2702;
   font-weight: 400;
+}
+.main .tariffs-section .tariff-item .tariff-price {
+  font-family: "Exo 2";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #4ebd09;
 }
 .main .tariffs-section .button-wrapper {
   text-align: center;
@@ -1289,6 +1304,12 @@ body {
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-title {
     font-size: 24px;
     margin-top: 16px;
+    margin-bottom: 16px;
+  }
+  .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-subtitle {
+    margin-bottom: 26px;
+    font-size: 18px;
+    line-height: 28px;
   }
   .main .introduce-section .introduce-wrapper .introduce-content .introduce-content-date {
     font-family: "Exo 2";
