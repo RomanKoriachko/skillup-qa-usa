@@ -52,14 +52,14 @@ for (let i = 0; i < programBtn.length; i++) {
 	});
 }
 
-for (let i = 0; i < coachBtn.length; i++) {
-	coachBtn[i].addEventListener('click', () => {
-		window.scrollTo({
-			top: coachSection.getBoundingClientRect().top + window.scrollY - 100,
-			behavior: 'smooth',
-		});
-	});
-}
+// for (let i = 0; i < coachBtn.length; i++) {
+// 	coachBtn[i].addEventListener('click', () => {
+// 		window.scrollTo({
+// 			top: coachSection.getBoundingClientRect().top + window.scrollY - 100,
+// 			behavior: 'smooth',
+// 		});
+// 	});
+// }
 
 // Burger menu
 
@@ -195,7 +195,7 @@ function validatePhone(id, formSelector) {
 		utilsScript:
 			'https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/utils.js',
 		hiddenInput: 'phone',
-		preferredCountries: ['ua'],
+		preferredCountries: ['us'],
 	});
 
 	const preventDefault = function (e) {

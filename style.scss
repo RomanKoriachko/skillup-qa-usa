@@ -372,6 +372,10 @@ body {
 					align-items: center;
 					gap: 20px;
 					margin-bottom: 10px;
+					> img {
+						width: 48px;
+						height: 48px;
+					}
 					> p {
 						@include fonts.t1();
 						text-align: left;
