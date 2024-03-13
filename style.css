@@ -495,6 +495,7 @@ body {
 .main .suitable-section .suitable-wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
   justify-items: center;
   gap: 20px;
   width: 100%;
@@ -1082,6 +1083,7 @@ body {
     display: block;
   }
   .main .introduce-section .introduce-wrapper .introduce-content-title {
+    font-size: 50px;
     width: 100%;
     margin-bottom: 36px;
   }
@@ -1121,6 +1123,7 @@ body {
   }
   .main .suitable-section .suitable-wrapper {
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
     gap: 10px;
   }
   .main .suitable-section .suitable-wrapper .suitable-item {
